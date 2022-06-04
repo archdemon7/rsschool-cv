@@ -8,14 +8,14 @@
 * GitHub: [archdemon7](https://github.com/archdemon7)
 * Discord: archdemon#0138
 
-___
+------------------
 
 ### About me
 I am a system administrator. I enrolled in this course because I want to change 
 my occupation to Frontend developer. I have experience working with HTML, CSS, Python.
 I am currently taking courses on the Django framework.
 
-___
+------------------
 
 ### Skills
 * HTML
@@ -27,7 +27,7 @@ ___
 * Bash
 * Editors: VSCode, WebStorm
 
-___
+------------------
 
 ### Code example
 **Delete occurrences of an element if it occurs more than n times.**
@@ -44,7 +44,7 @@ def delete_nth(order,max_e):
     return m[::-1]
 ```
 
-___
+------------------
 
 ### Education
 * University: Brest State Technical University
@@ -53,7 +53,7 @@ ___
     * Python: [advanced course](https://stepik.org/cert/1519345)
 * Rolling Scopes School: [JavaScript/Front-end Course. Stage 0 by RS School](https://wearecommunity.io/events/js-stage0-rs-2022q2) (in process…)
 
-___
+------------------
 
 ### Language
 * Russian - native
