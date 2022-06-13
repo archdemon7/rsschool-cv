@@ -1,1 +1,1 @@
-# rsschool-cv
+https://archdemon7.github.io/rsschool-cv/
