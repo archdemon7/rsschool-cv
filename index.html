@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>CV Task</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap" rel="stylesheet">
+  <title>CV</title>
 </head>
 <body>
-
+  <div class="wrapper">
+    <header>
+      <nav class="nav-display">
+        <ul class="main-nav">
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code">Code example</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#language">Language</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section> <!--profile-->
+        <div class="name">
+          <div>
+            <h1>Artsiom 
+            <span> Vakulski</span></h1>
+            <p class="profile">Front-end developer in future</p>
+          </div>
+          <img src="img/profilefoto.png" alt="Artem photo" width="200" height="200">
+        </div>
+      </section>
+      <section id="contacts"> <!--contacts-->
+        <h2>Contacts</h2>
+        <div class="text">
+            <ul class="class-ul">
+                <li><span class="class-bold">Country:</span> Belarus</li>
+                <li><span class="class-bold">City:</span> Brest</li>
+                <li><span class="class-bold">Email:</span> vakylskij@gmail.com</li>
+                <li><span class="class-bold">Telegram:</span> <a target="_blank" href="https://t.me/archdemon7">archdemon7</a></li>
+                <li><span class="class-bold">GitHub:</span> <a target="_blank" href="https://github.com/archdemon7">archdemon7</a></li>
+                <li><span class="class-bold">Discord:</span> archdemon#0138</li>
+            </ul>
+        </div>     
+      </section>
+      <section id="about"> <!--about me-->
+        <h2>About me</h2>
+        <p class="text">I am a system administrator. I enrolled in this course because I want to change my occupation to Frontend developer. 
+          I have experience working with HTML, CSS and Python. I am currently taking courses on the Django framework.</p>
+      </section>
+      <section id="skills"> <!--skills-->
+        <h2>Skills</h2>
+        <div>
+          <div class="skills">
+            <div class="html5icon">
+              <h3>HTML5</h3>
+            </div>
+            <div class="html5icon css3icon">
+              <h3>CSS3</h3>
+            </div>
+            <div class="html5icon pythonicon">
+              <h3>Python</h3>
+            </div>
+            <div class="html5icon djangoicon">
+              <h3>Django</h3>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="html5icon windowsicon">
+              <h3>Windows Server</h3>
+            </div>
+            <div class="html5icon githubicon">
+              <h3>GitHub</h3>
+            </div>
+            <div class="html5icon vscodeicon">
+              <h3>VS Code</h3>
+            </div>
+            <div class="html5icon webstormicon">
+              <h3>WebStorm</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="code"> <!--code example-->
+        <h2>Code example</h2>
+        <p class="text"><span class="class-bold">Delete occurrences of an element if it occurs more than n times.</span>
+          <span class="class-italic">Given a list and a number, create a new list that contains each number of list at most N times, 
+          without reordering. For example if the input number is 2, and the input list is [1,2,3,1,2,1,2,3], 
+          you take [1,2,3,1,2], drop the next [1,2] since this would lead to 1 and 2 being in the result 3 times, 
+          and then take 3, which leads to [1,2,3,1,2,3]. With list [20,37,20,21] and number 1, the result would be [20,37,21].</span>></p>
+          <pre><code>
+            def delete_nth(order,max_e):
+              m = order[::-1]
+              for i in order:
+                while m.count(i) > max_e:
+                m.remove(i)
+              return m[::-1]
+            </code></pre>
+      </section>
+      <section id="education"> <!--education-->
+        <h2>Education</h2>
+        <div class="text">
+            <ul class="class-ul">
+                <li>University: <a target="_blank" href="https://www.bstu.by/">Brest State Technical University</a></li>
+                <li>BeeGeek:
+                  <ul class="class-ul">
+                    <li>Python: <a target="_blank" href="https://stepik.org/course/58852/">course for beginners</a></li>
+                    <li>Python: <a target="_blank" href="https://stepik.org/course/68343/">advanced course</a></li>
+                  </ul>
+                </li>
+                <li>Rolling Scopes School: <a target="_blank" href="https://wearecommunity.io/events/js-stage0-rs-2022q2">JavaScript/Front-end Course. Stage 0 by RS School</a> (in process…)</li>
+              </ul>
+        </div>
+      </section>
+      <section id="language"> <!--language-->
+        <h2>Language:</h2>
+        <div class="text">
+            <ul class="class-ul">
+                <li>Russian - native</li>
+                <li>English - A1</li>
+              </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer name">
+        <a target="_blank" href="https://rs.school/js-stage0/"><img src="img/rs_school_js.svg" alt="rsschool logo"></a>
+        <p class="footer-items">© 2022 Artsiom Vakulski <a target="_blank" href="https://github.com/archdemon7">GitHub</a></p>
+    </footer>
+  </div>
 </body>
 </html>
