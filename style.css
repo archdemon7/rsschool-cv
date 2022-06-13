@@ -1,3 +1,112 @@
-body {
+*{
+    padding: 0;
     margin: 0;
+    border: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: url(img/background.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+h1 {
+    font-size: 45px;
+}
+nav {
+    padding-top: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.profile{
+    text-align: right;
+}
+.text {
+    margin-left: 25px;
+}
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    width:900px;
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.nav-display {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.main-nav li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    padding: 3px; /* Поля вокруг текста */
+}
+section {
+    padding: 15px 15px 0 15px;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+.html5icon {
+    background: url(img/html5icon.png) no-repeat center;
+    text-align: center;
+    width: 200px;
+    padding-top: 80px;
+}
+.css3icon {
+    background: url(img/css3icon.png) no-repeat center;
+    
+}
+.pythonicon {
+    background: url(img/pythonicon.png) no-repeat center;
+}
+.djangoicon {
+    background: url(img/djangoicon.png) no-repeat center;
+}
+.windowsicon {
+    background: url(img/windowsicon.png) no-repeat center;
+}
+.githubicon {
+    background: url(img/githubicon.png) no-repeat center;
+}
+.vscodeicon {
+    background: url(img/vscodeicon.png) no-repeat center;
+}
+.webstormicon {
+    background: url(img/webstormicon.png) no-repeat center;
+}
+h2 {
+
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+}
+pre {
+    background-color: rgba(80, 77, 77, 0.1);
+}
+.class-bold {
+    font-weight: bold;
+}
+.class-italic{
+    font-style: italic;
+}
+.class-ul{
+    margin-left: 20px;
+}
+.footer{
+    background: rgba(0, 0, 0, 0.5 );
+    margin-top: 15px;
+    height: 150px;
+}
+.footer img{
+    height: 80px;
+}
+.footer p{
+    font-weight: bold;
 }
